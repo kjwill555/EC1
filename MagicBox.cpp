@@ -1,4 +1,7 @@
+#ifndef _MAGIC_BOX
+#define _MAGIC_BOX
 #include "PlainBox.cpp"
+
 template < class ItemType > 
 class MagicBox :public PlainBox < ItemType >
 {
@@ -38,3 +41,4 @@ void MagicBox < ItemType >::setItem(const ItemType & theItem)
 		firstItemStored = true;	// Box now has magic
 	}	// end if
 }
+#endif
