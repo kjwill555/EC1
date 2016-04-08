@@ -1,3 +1,5 @@
+#ifndef _TOY_BOX
+#define _TOY_BOX
 #include "PlainBox.cpp"
 
 enum Color
@@ -47,3 +49,4 @@ Color ToyBox < ItemType >::getColor() const
 {
 	return boxColor;
 }
+#endif
