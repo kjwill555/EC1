@@ -1,3 +1,5 @@
+#ifndef _BOX_INTERFACE
+#define _BOX_INTERFACE
 template < class ItemType > 
 class BoxInterface
 {
@@ -8,3 +10,4 @@ public:
 	virtual ItemType getItem() const = 0;
 
 };
+#endif
