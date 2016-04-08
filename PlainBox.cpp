@@ -1,3 +1,5 @@
+#ifndef _PLAIN_BOX
+#define _PLAIN_BOX
 #include "BoxInterface.cpp"
 
 template < class ItemType >	// Indicates this is a template defi nition
@@ -35,7 +37,8 @@ void PlainBox < ItemType >::setItem(const ItemType & theItem)
 }   // end setItem
 
 template < class ItemType >
-ItemType PlainBox < ItemType >::getItem() const const
+ItemType PlainBox < ItemType >::getItem() const
 {
 	return item;
 }
+#endif
