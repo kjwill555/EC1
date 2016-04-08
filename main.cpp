@@ -3,14 +3,16 @@
 #include "ToyBox.cpp"
 #include "PlainBox.cpp"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main() {
 
 	string hi = "hi";
-	ToyBox <string> tb(hi, BLACK);
-	
-	cout << tb.getColor();
+	ToyBox <string> tb;
+	BoxInterface <string> * boxPtr1 = &tb;
+	boxPtr1->setItem(hi);
+	cout << boxPtr1->getItem() << endl;
 	return 0;
 }
